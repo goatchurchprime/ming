@@ -1,0 +1,5 @@
+nix shell github:nixos/nixpkgs/nixos-unstable#openai-whisper-cpp
+
+whisper-cpp-download-ggml-model small.en
+
+whisper-cpp-stream -m ggml-small.en.bin
